@@ -1,0 +1,303 @@
+:root {
+    --main-color: #231955 !important;
+    --hover-color: #170f3f !important;
+    --body-color: #ededed;
+}
+
+.btn-main-color {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--main-color);
+    --bs-btn-border-color: var(--main-color);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #1e144d;
+    --bs-btn-hover-border-color: var(--hover-color);
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--hover-color);
+    --bs-btn-active-border-color: #1e144d;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: var(--main-color);
+    --bs-btn-disabled-border-color: var(--main-color);
+}
+
+#navbar {
+    background-color: var(--main-color);
+    z-index: 90;
+}
+
+#nav-category li a {
+    text-align: center;
+    width: 130px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dropdown-category {
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#bi-print {
+    color: black;
+    display: none;
+}
+
+#print {
+    width: 20px;
+    color: green;
+    float: left;
+}
+#print i {
+    color: black;
+    background-color: #ffffff;
+}
+
+#print:hover #bi-print {
+    position: absolute;
+    color: black;
+    margin-left: 20px;
+    animation-name: print;
+    animation-duration: 0.5s;
+    display: block;
+}
+
+@keyframes print {
+    0% {
+        opacity: 0;
+        margin-left: 18px;
+    }
+    100% {
+        opacity: 1;
+        margin-left: 20px;
+    }
+}
+
+.jumbotron {
+    width: 100%;
+    height: 510px;
+    background-color: var(--main-color);
+}
+
+.jumbotron .img {
+    width: 100%;
+    text-align: center;
+}
+
+.hr-category {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+#card-pesanan {
+    box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.06);
+}
+
+#card-pesanan:hover {
+    box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.2);
+}
+
+#makeup-pilihan h5 {
+    padding-left: 5px;
+    padding-bottom: 0;
+    height: 35px;
+    word-wrap: break-word;
+    white-space: normal;
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-size: 0.9rem;
+}
+
+.harga {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+}
+
+.footer {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(29, 29, 29);
+    position: static;
+    bottom: 0px;
+}
+
+#media ul li a:hover {
+    color: #ed3d3d;
+}
+
+#media ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#login {
+    margin-top: 40px;
+    padding: 55px 20px;
+    border-radius: 5px;
+}
+
+#register {
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    padding: 20px 20px;
+}
+
+.copy {
+    text-align: center;
+    color: #ffff;
+    width: 100%;
+    padding: 10px;
+    border-top: 1px solid #f3f3f3;
+    background-color: black;
+}
+
+/* Rating */
+
+.start {
+    color: green;
+}
+
+.stop {
+    color: red;
+}
+
+.rate {
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.rating > input {
+    display: none;
+}
+
+.rating > label {
+    position: relative;
+    width: 1em;
+    font-size: 30px;
+    font-weight: 300;
+    color: #ffd600;
+    cursor: pointer;
+}
+
+.rating > label::before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0;
+}
+
+.rating > label:hover:before,
+.rating > label:hover ~ label:before {
+    opacity: 1 !important;
+}
+
+.rating > input:checked ~ label:before {
+    opacity: 1;
+}
+
+.rating:hover > input:checked ~ label:before {
+    opacity: 0.4;
+}
+
+.buttons {
+    top: 36px;
+    position: relative;
+}
+
+.rating-submit {
+    border-radius: 15px;
+    color: #fff;
+    height: 49px;
+}
+
+.rating-submit:hover {
+    color: #fff;
+}
+
+.nomor {
+    color: #ffffff;
+    text-align: center;
+    background-color: var(--main-color);
+    position: absolute;
+    z-index: 1;
+    padding: 4px 4px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.buktibayar {
+    cursor: pointer;
+    width: 100%;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.buktibayar:hover {
+    background-color: rgba(53, 67, 158, 0.308);
+    color: rgb(0, 0, 0);
+}
+
+.bukti {
+    display: none;
+}
+
+.gambarBayar {
+    position: relative;
+    text-align: center;
+    border: 1px solid black;
+    background-color: #23195500;
+    width: 100%;
+    display: none;
+    cursor: pointer;
+}
+
+.gambarBukti {
+    border: 1px solid black;
+    background-color: #23195500;
+    width: 100%;
+    cursor: pointer;
+}
+
+.middle {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.gambarBayar:hover .imgbayar {
+    opacity: 0.3;
+}
+.gambarBayar:hover .middle {
+    opacity: 1;
+}
+
+.gambarBukti:hover .imgbayar {
+    opacity: 0.3;
+}
+.gambarBukti:hover .middle {
+    opacity: 1;
+}

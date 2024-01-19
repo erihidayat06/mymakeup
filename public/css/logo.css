@@ -1,0 +1,95 @@
+.logo {
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.logo:hover {
+    background-color: rgba(53, 67, 158, 0.308);
+    color: rgb(0, 0, 0);
+}
+
+.mlogo {
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.mlogo:hover {
+    background-color: rgba(53, 67, 158, 0.308);
+    color: rgb(0, 0, 0);
+}
+
+.bukti {
+    display: none;
+}
+
+.gambarlogo2 {
+    position: relative;
+    text-align: center;
+    border: 1px solid black;
+    background-color: #23195500;
+    width: 200px;
+    height: 200px;
+    display: none;
+    cursor: pointer;
+}
+
+/* .gambarlogo2:hover {
+    border: 1px solid black;
+    width: 200px;
+    display: none;
+    cursor: pointer;
+} */
+.gambarlogo1 {
+    position: relative;
+    text-align: center;
+    border: 1px solid black;
+    background-color: #23195500;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+
+/* .gambarlogo1:hover {
+    border: 1px solid black;
+    width: 200px;
+    cursor: pointer;
+} */
+
+.middle {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.lmiddle {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.gambarlogo2:hover .imgbayar {
+    opacity: 0.3;
+}
+.gambarlogo2:hover .middle {
+    opacity: 1;
+}
+
+.gambarlogo1:hover .imgbayar {
+    opacity: 0.3;
+}
+.gambarlogo1:hover .middle {
+    opacity: 1;
+}
